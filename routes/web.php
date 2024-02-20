@@ -76,7 +76,7 @@ Route::post('/signup', [RegisterController::class, 'signupR'])->name('signupR');
 Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 Route::group(["prefix" => "/dashboard"], function () {
-    Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name("dashboard");
+    Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name("dashboard")->middleware('auth');
 })->middleware('auth');
 
 Route::group(["prefix" => "/class"], function () {
