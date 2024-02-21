@@ -32,6 +32,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                <li><a class="dropdown-item" href="/dashboard/dashboard">Dashboard</a></li>
             </ul>
             
         @else
@@ -39,6 +40,8 @@
         @endif
     </li>
 </ul>
+
+
           </ul>
         </div>
     </div>
